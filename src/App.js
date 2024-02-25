@@ -5,9 +5,16 @@ function App() {
   return (
     <div className='App'>
       <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
+        <img
+          src={logo}
+          className='App-logo'
+          alt='logo'
+        />
         <p>
           <h2>Testing Github Pages with React</h2>
+        </p>
+        <p>
+          <h2>Say hello</h2>
         </p>
         <a
           className='App-link'
