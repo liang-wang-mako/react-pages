@@ -1,27 +1,8 @@
-name: Github Pages Deploy
-
-on:
-  push:
-    branches:
-      - 'main'
-
+name: hello-world
+on: push
 jobs:
-  build:
+  sample-job:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [18.x]
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v1
-
-      - name: Install and build
-        run: npm install && npm run build
-
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        with:
-          branch: gh-pages
-          folder: build
+      - name: my-step
+        run: echo "Hello World!"
